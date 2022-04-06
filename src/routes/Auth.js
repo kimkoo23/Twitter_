@@ -27,7 +27,8 @@ const Auth =  () => {
                 name="password" 
                 type="password" 
                 placeholder="Password" 
-                required value={password} />
+                required value={password}
+                onChange={onChange} />
             <input type="submit" value="log In" />
         </form>
         <div>
