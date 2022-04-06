@@ -4,7 +4,12 @@ import {authService} from "../firebase";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(authService.currentUser);
-  return <AppRouter isLoggedIn={isLoggedIn}/>;
+  return (
+    <>
+      <AppRouter isLoggedIn={isLoggedIn} />
+      <footer>&copy; {new Date().getFullYear()} Twitter-clone</footer>
+    </>
+  );
 }
 
 export default App;
